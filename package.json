@@ -1,0 +1,10 @@
+{
+  "name": "lighthouse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "chrome-launcher": "^0.15.1",
+    "lighthouse": "^9.6.5"
+  }
+}

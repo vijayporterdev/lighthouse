@@ -1,0 +1,13 @@
+node_modules
+.eslintcache
+.DS_Store
+*.map
+*.bundle.js
+*.env
+package.lock
+yarn-error.log*
+
+
+#vscode setttings
+.vscode/
+
