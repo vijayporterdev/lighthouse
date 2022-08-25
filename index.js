@@ -10,10 +10,17 @@ const chromeLauncher = require("chrome-launcher");
     onlyCategories: ["performance"],
     port: chrome.port,
   };
-  const runnerResult = await lighthouse("https://porter.in", options, {
+  const runnerResult = await lighthouse("https://pfe.porter.in/dashboard/payments", options, {
     extends: "lighthouse:default",
     settings: {
-      onlyAudits: ["first-meaningful-paint", "speed-index", "interactive","largest-contentful-paint","total-blocking-time","cumulative-layout-shift"],
+      onlyAudits: [
+        "first-meaningful-paint",
+        "speed-index",
+        "interactive",
+        "largest-contentful-paint",
+        "total-blocking-time",
+        "cumulative-layout-shift",
+      ],
     },
   });
 
